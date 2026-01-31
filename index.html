@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Visiting Card</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    window.onload = function () {
+      const a = document.createElement("a");
+      a.href = "downloads/visiting-card.jpg";
+      a.download = "Visiting-Card.jpg";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>My Visiting Card</h2>
+    <p>Your download will start automatically</p>
+    <img src="downloads/visiting-card.jpg" alt="Visiting Card">
+    <a class="btn" href="downloads/visiting-card.jpg" download>Download Again</a>
+  </div>
+</body>
+</html>
